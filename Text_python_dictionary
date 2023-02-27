@@ -1,0 +1,91 @@
+Text data analytics - Dictionary
+
+adam - Adam is a replacement optimization algorithm for stochastic gradient descent for training deep learning models.
+
+Distilbert - 2019 -smaller and more efficient version of Bert. Can be tested in additional training runs. Accuracy for more epochs has better accuracy. Classify e.g. verb, noun, adjective. 
+
+BERT - model developed in 2018. Bidirectional Encoder Representations from Transformers is a transformer-based machine learning technique for natural language processing pre-training developed by Google. BERT was created and published in 2018 by Jacob Devlin and his colleagues from Google. BERT was pre-trained so well that it can be applied on small datasets and still have good performance. Does not have decoder (generative), only encoder ( understanding input ).
+
+binary crossentropy - Binary cross entropy compares each of the predicted probabilities to actual class output which can be either 0 or 1. It then calculates the score that penalizes the probabilities based on the distance from the expected value. That means how close or far from the actual value.
+
+BPE - bite pair encoding - Byte pair encoding or digram coding is a simple form of data compression in which the most common pair of consecutive bytes of data is replaced with a byte that does not occur within that data. A table of the replacements is required to rebuild the original data. The algorithm was first described publicly by Philip Gage in a February 1994 article "A New Algorithm for Data Compression" in the C Users Journal.
+
+A variant of the technique has shown to be useful in several natural language processing (NLP) applications, such as Google's SentencePiece,[5] and OpenAI's GPT-3.
+
+callback - tool to understand optimizing.
+
+Checkpoint - checkpoint.pretrained_state_mapping specifies how a pretrained model will be loaded and mapped to which keys of the target model. We use it since we only want to load specific layers from the pretrained model. 
+
+CLS - stands for classification. It is added at the beginning because the training tasks here is sentence classification. And because they need an input that can represent the meaning of the entire sentence, they introduce a new tag.
+
+Components - Five main Component of Natural Language processing in AI are: Morphological and Lexical Analysis, syntactic Analysis, semantic Analysis, discourse Integration, pragmatic Analysis.
+
+Decoder - suitable for generative tasks.
+
+Dropout layer - to reduce overfitting.
+
+ELMo - ELMo and BERT embeddings are context-sensitive, producing different representations for words that share the same spelling but have different meanings (homonyms) such as "bank" in "river bank" and "bank balance". ELMo ("Embeddings from Language Model") is a word embedding method for representing a sequence of words as a corresponding sequence of vectors.
+
+Encoder - suitable for information extraction tasks.
+
+GPT 3 - model designed in 2020. Generative Pre-trained Transformer 3 is an autoregressive language model that uses deep learning to produce human-like text. Generative Pre-trained Transformer, is a neural network machine learning model trained using internet data to generate any type of text.
+
+GPT NeoX - 2022 - GPT-NeoX is an implementation of 3D-parallel GPT-3-like autoregressive language models for distributed GPUs, based upon Megatron-LM and DeepSpeed. GPT-NeoX was used to train GPT-NeoX-20B, a 20 billion parameter language model, in colaboration with CoreWeave.
+
+GPU - hardware accelerator - GPU-accelerated computing is the employment of a graphics processing unit (GPU) along with a computer processing unit (CPU).
+
+Greedy longest match - Greedy means your expression will match as large a group as possible, lazy means it will match the smallest group possible. For this string: abcdefghijklmc. and this expression: a.*c. A greedy match will match the whole string, and a lazy match will match just the first abc.
+
+Hugging face - dataset library, for NLP as well.
+
+IMD - tokenized datasets available for training.
+
+Linear classify layer - The last (usually fully connected) layer of a neural-net can be considered as a form of a linear classifier. Usually when people say "linear classifier" they refer to Linear SVM (support vector machine). Linear SVM have hard or soft margin.
+
+Mask in tokenizer - Use the tokenization masking technique to mask source string data based on criteria that you specify in an algorithm. Masking techniques are: random, expression, key, substitution, dependent, tokenization, special mask formats, no masking. 
+
+Megatron LN - Megatron-LM is a highly optimized and efficient library for training large language models. With Megatron model parallelism, language models can be trained with billions of weights and then used in NeMo for downstream tasks.
+
+Model size - each model has size, amount of parameters. 
+
+Multi head attention - query, key and value. Parameters allow to create better word connection classification.
+
+Next sentence prediction - NSP - next sentence prediction is one-half of the training process behind the BERT model (the other being masked-language modeling — MLM).
+
+NLP with transformers -  NLP's Transformer is a new architecture that aims to solve tasks sequence-to-sequence while easily handling long-distance dependencies. Computing the input and output representations without using sequence-aligned RNNs or convolutions and it relies entirely on self-attention.
+
+NN - The neural network consists of three layers: an input layer, a hidden layer, and an output layer, k.
+
+re - regular expressions operators library.
+
+RoBerta - Bidirectional Encoder Representations from Transformers, or BERT, is a revolutionary self-supervised pretraining technique that learns to predict intentionally hidden (masked) sections of text. Crucially, the representations learned by BERT have been shown to generalize well to downstream tasks, and when BERT was first released in 2018 it achieved state-of-the-art results on many NLP benchmark datasets.
+
+self attention - mechanism for word embedding projection. Different weights for words in sentence. Attention is calculated by softmax function.
+
+Subword - Bert and GPT have different subword tokenization. Bert has 30 K vocabulary size and technique wordpiece, GPT has 50 K vocabulary size and technique BPE. 
+
+SVM - support vector machines - Support Vector Machine (SVM) is a simple supervised machine algorithm used for classification and regression purposes. What SVM does is tit SVM finds a hyperplane that creates a boundary between two classes of data to classify them.
+
+T5 - model by google. Translate e.g. from english to french. 
+
+tensorboard - dashboard for tensorflow.
+
+tensorflow hub - TensorFlow Hub is a repository of trained machine learning models ready for fine-tuning and deployable anywhere.
+
+tensorflow-text - Text processing tools for TensorFlow.
+
+Text classification models - Some of the most popular text classification algorithms include the Naive Bayes family of algorithms, support vector machines (SVM), and deep learning. 
+
+Tiny IMDb - passing tokenized dataset to Bert model. We can load the weights of pretrained model. Small sample of IMDd data is called Tiny, before we implement for full sample. There is e.g. only 50 examples in Tiny IMDd.
+
+Tokenizers - python library, provides an implementation of today's most used tokenizers, with a focus on performance and versatility. Training new vocabularies, fast.
+
+Training run - full training run after the Tiny IMDd has been performed. 
+
+Transformers - python library - Transformers (formerly known as pytorch-transformers and pytorch-pretrained-bert) provides state-of-the-art general-purpose architectures (BERT, GPT-2, RoBERTa, XLM, DistilBert, XLNet, CTRL...) for Natural Language Understanding (NLU) and Natural Language Generation (NLG) with over 32+ pretrained models in 100+ languages and deep interoperability between TensorFlow 2.0 and PyTorch.
+
+Transformers history - Transformers (2017), GPT (2018), BERT (2018), GPT2 (2019), BART, DistilBert and T5 (2019), GPT3 (2020).
+
+ULMFit - Universal Language Model Fine-tuning, or ULMFiT, is an architecture and transfer learning method that can be applied to NLP tasks.
+
+Venues related to NLP - ACL, NAACL, EMNLP, CVPR, NeurIPS, ICLR, AAAI, ICML, or SIGGRAPH
